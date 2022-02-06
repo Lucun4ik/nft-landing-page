@@ -1,6 +1,6 @@
 // METAMASK CONNECTION
 const TIMEOUT = 1000;
-const COLLECTION_NAME = 'Wild Parrots Jungle Clubs';
+const COLLECTION_NAME = 'Wild Parrots Jungle Club';
 let editions = [];
 let dots = 1;
 
@@ -78,15 +78,15 @@ function updateStatusText(isOwner, checking) {
   const statusText = document.querySelector('.owner-status');
   if(checking) {
     if(isOwner) {
-      statusText.innerText = `You do own ${COLLECTION_CryptoDudes}!! 😻 Let's see how many${renderDots(dots)}`;
+      statusText.innerText = `You do own ${WildParrots}!! 😻 Let's see how many${renderDots(dots)}`;
     } else {
-      statusText.innerText = `Checking to see if you own any ${COLLECTION_Wild_Parrots_Jungle_Club} 😻${renderDots(dots)}`;
+      statusText.innerText = `Checking to see if you own any ${WildParrots} 😻${renderDots(dots)}`;
     }
   } else {
     if(isOwner) {
-      statusText.innerText = `You own ${editions.length} ${COLLECTION_Wild_Parrots_Jungle_Club}!! 😻`;
+      statusText.innerText = `You own ${editions.length} ${WildParrots}!! 😻`;
     } else {
-      statusText.innerText = `You don't own any ${COLLECTION_Wild_Parrots_Jungle_Club} 😿`;
+      statusText.innerText = `You don't own any ${WildParrots} 😿`;
     }
   }
   dots = dots === 3 ? 1 : dots + 1;
