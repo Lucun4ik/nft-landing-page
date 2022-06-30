@@ -1,6 +1,6 @@
 // METAMASK CONNECTION
 const TIMEOUT = 1000;
-const COLLECTION_NAME = 'CryptoDudes';
+const COLLECTION_NAME = 'ReadMEs';
 let editions = [];
 let dots = 1;
 
